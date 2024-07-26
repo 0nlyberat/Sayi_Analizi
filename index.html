@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Analizi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            padding: 10px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sayı Analizi</h1>
+        <input type="number" id="numberInput" placeholder="Bir sayı girin">
+        <button onclick="addNumber()">Ekle</button>
+        <button onclick="clearNumbers()">Temizle</button>
+        <div class="results">
+            <p id="count">Girilen Sayı Adedi: 0</p>
+            <p id="sum">Girilen Sayıların Toplamı: 0</p>
+            <p id="average">Girilen Sayıların Ortalaması: 0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
